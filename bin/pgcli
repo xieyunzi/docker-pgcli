@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo 'useage: pgcli postgresql://[user[:password]@][netloc][:port][/dbname]'
+docker-compose run --rm pgcli /bin/bash

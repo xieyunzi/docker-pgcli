@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  pgcli:
+    image: xieyunzi/pgcli
+    build: .
+
+networks:
+  default:
+    external:
+      name: xz-bridge
