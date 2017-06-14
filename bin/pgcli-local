@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo 'Usage:'
+echo '    pgcli postgresql://[user[:password]@][netloc][:port][/dbname]'
+echo 'SQL statements:'
+echo '    \?'
+echo '    \h'
+docker-compose run --rm pgcli pgcli postgresql://root:root@localhost
