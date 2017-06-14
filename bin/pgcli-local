@@ -5,4 +5,4 @@ echo '    pgcli postgresql://[user[:password]@][netloc][:port][/dbname]'
 echo 'SQL statements:'
 echo '    \?'
 echo '    \h'
-docker-compose run --rm pgcli pgcli postgresql://root:root@localhost
+docker-compose run --rm pgcli sh -c 'stty onlcr; pgcli postgresql://root:root@localhost'
